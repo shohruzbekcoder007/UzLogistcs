@@ -18,7 +18,6 @@ const LoginReg = ({userUpdate}) => {
   let password = ``;
 
   const handleLogin = () => {
-    console.log("1")
     axios.post(
       `/user/login`,
       {
@@ -26,7 +25,7 @@ const LoginReg = ({userUpdate}) => {
         password: password
       }
     )
-      .then((response) => {
+    .then((response) => {
       console.log(response.body);
       userUpdate(response.body);
     })
@@ -37,7 +36,9 @@ const LoginReg = ({userUpdate}) => {
   }
 
   return (
-    <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
+    <TouchableWithoutFeedback 
+      // onPress={() => Keyboard.dismiss()}
+    >
       <View style={styles.container}>
         <View style={styles.bigCircle}></View>
         <View style={styles.smallCircle}></View>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Main from './components/Main'
 import LoginReg from './components/LoginReg'
+import Reg from './components/Reg';
 
 const App = () => {
 
@@ -15,6 +16,7 @@ const App = () => {
    } else {
 
       return <LoginReg userUpdate={userUpdate}/>
+      // return <Reg/>
    }
 }
 export default App
