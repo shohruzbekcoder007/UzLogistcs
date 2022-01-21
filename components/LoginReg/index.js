@@ -26,8 +26,8 @@ const LoginReg = ({userUpdate}) => {
       }
     )
     .then((response) => {
-      console.log(response.body);
-      userUpdate(response.body);
+      console.log(response.data);
+      userUpdate(response.data);
     })
     .catch((error) => {
       console.log({ errorMessage: error.toString() });
@@ -58,7 +58,7 @@ const LoginReg = ({userUpdate}) => {
               <Text style={styles.inputLabel}>Email</Text>
               <TextInput
                 style={styles.input}
-                autoCapitalize={false}
+                // autoCapitalize={false}
                 keyboardType='email-address'
                 textContentType='emailAddress'
                 onChangeText={(text) => {email = text}}
@@ -68,7 +68,7 @@ const LoginReg = ({userUpdate}) => {
               <Text style={styles.inputLabel}>Password</Text>
               <TextInput
                 style={styles.input}
-                autoCapitalize={false}
+                // autoCapitalize={false}
                 secureTextEntry={true}
                 textContentType='password'
                 onChangeText={(text) => {password = text}}

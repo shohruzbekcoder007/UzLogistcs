@@ -15,8 +15,8 @@ const App = () => {
       return <Main/>
    } else {
 
-      return <LoginReg userUpdate={userUpdate}/>
-      // return <Reg/>
+      // return <LoginReg userUpdate={userUpdate}/>
+      return <Reg userUpdate={userUpdate}/>
    }
 }
 export default App

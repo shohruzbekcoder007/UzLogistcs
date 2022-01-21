@@ -1,9 +1,9 @@
 import React from 'react'
-import plusImg from '../../assets/img/Icon_awesome-plus.png'
-import portfelImg from './../../assets/img/fi-rr-user.png'
-import message from './../../assets/img/fi-rr-envelope.png'
-import home from './../../assets/img/fi-rr-home.png'
-import subtitles from './../../assets/img/fi-rr-subtitles.png'
+// import plusImg from '../../assets/img/Icon_awesome-plus.png'
+// import portfelImg from './../../assets/img/fi-rr-user.png'
+// import message from './../../assets/img/fi-rr-envelope.png'
+// import home from './../../assets/img/fi-rr-home.png'
+// import subtitles from './../../assets/img/fi-rr-subtitles.png'
 import { 
     FooterView,
     FooterCreater,
@@ -26,7 +26,7 @@ const Main = () => {
                     onPress={()=>{console.log("add order")}}
                 >
                     <ImageBackground 
-                        source={plusImg}
+                        // source={plusImg}
                         style={styles.image}
                         resizeMode="center"
                     >
@@ -52,7 +52,7 @@ const Main = () => {
                     underlayColor="#f0f4f7"
                 >
                     <ImageBackground 
-                        source={subtitles}
+                        // source={subtitles}
                         style={styles.image}
                         resizeMode="contain"
                     >
@@ -65,7 +65,7 @@ const Main = () => {
                     underlayColor="#f0f4f7"
                 >
                     <ImageBackground 
-                        source={message}
+                        // source={message}
                         style={styles.image}
                         resizeMode="contain"
                     >
@@ -77,7 +77,7 @@ const Main = () => {
                     underlayColor="#f0f4f7"
                 >
                     <ImageBackground 
-                        source={portfelImg}
+                        // source={portfelImg}
                         style={styles.image}
                         resizeMode="contain"
                     >

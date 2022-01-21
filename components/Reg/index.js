@@ -22,14 +22,6 @@ const Reg = ({userUpdate}) => {
   let tel = ``;
 
   const handleLogin = () => {
-      console.log("1",{
-        first_name: ism,
-        last_name: fam,
-        father_name: otch,
-        phone: tel,
-        email: email,
-        password: password
-      })
     axios.post(
       `/user/register`,
       {
@@ -42,8 +34,8 @@ const Reg = ({userUpdate}) => {
       }
     )
     .then((response) => {
-      console.log(response.body);
-      userUpdate(response.body);
+      console.log(response.data);
+      userUpdate(response.data);
     })
     .catch((error) => {
       console.log({ errorMessage: error.toString() });
