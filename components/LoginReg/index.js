@@ -12,7 +12,7 @@ import {
 import { Icon } from 'react-native-elements';
 import axios from './../../baseUrl'
 
-const LoginReg = ({userUpdate}) => {
+const LoginReg = ({userUpdate, setLogin}) => {
 
   let email = ``;
   let password = ``;
@@ -74,16 +74,27 @@ const LoginReg = ({userUpdate}) => {
                 onChangeText={(text) => {password = text}}
               />
             </View>
-            <TouchableOpacity style={styles.loginButton}>
+            <TouchableOpacity 
+              style={styles.loginButton}
+              onPress={handleLogin}
+            >
               <Text
                 style={styles.loginButtonText}
-                onPress={handleLogin}
+                
               >
                 Login
               </Text>
             </TouchableOpacity>
-            <TouchableOpacity>
-              <Text style={styles.registerText}>
+            <TouchableOpacity
+              onPress={() => {
+                setLogin(false)
+                // console.log("salom")
+              }}
+            >
+              <Text 
+                style={styles.registerText}
+                
+              >
                 Don't have an account? Register Now
               </Text>
             </TouchableOpacity>

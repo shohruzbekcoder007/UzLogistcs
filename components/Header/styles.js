@@ -1,6 +1,14 @@
 import styled from 'styled-components/native';
 
 export const HeaderView = styled.View`
-    flex: 1;
-    background-color: #1CAE81;
+    height: 30px;
+    background-color: #eb4d4b;
+    justify-content: center;
+    align-items: center;
+    text-weight: bold;
+`;
+
+export const HeaderText = styled.Text`
+    text-align: center;
+    color: #fff;
 `;

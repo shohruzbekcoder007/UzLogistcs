@@ -26,7 +26,7 @@ export const FooterCreater = styled.View`
 export const FooterAdd = styled.TouchableOpacity`
     width: 56px;
     height: 56px;
-    background-color: #1CAE81;
+    background-color: #eb4d4b;
     border-radius: 28px;
     justify-content: center;
     align-items: center;

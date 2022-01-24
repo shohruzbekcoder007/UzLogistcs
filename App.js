@@ -6,17 +6,21 @@ import Reg from './components/Reg';
 const App = () => {
 
    const [user, setUser] = useState({_id: 0});
+   const [login, setLogin] = useState(true);
+
    const userUpdate = (user) => {
       console.log(user)
       setUser(user);
    }
 
-   if(user._id != 0){
+   // if(user._id != 0){
       return <Main/>
-   } else {
-
-      // return <LoginReg userUpdate={userUpdate}/>
-      return <Reg userUpdate={userUpdate}/>
-   }
+   // } else {
+   //    if(login){
+   //       return <LoginReg setLogin={setLogin} userUpdate={userUpdate}/>
+   //    } else {
+   //       return <Reg setLogin={setLogin} userUpdate={userUpdate}/>
+   //    }
+   // }
 }
 export default App

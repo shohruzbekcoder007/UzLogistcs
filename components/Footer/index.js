@@ -1,9 +1,9 @@
 import React from 'react'
-// import plusImg from '../../assets/img/Icon_awesome-plus.png'
-// import portfelImg from './../../assets/img/fi-rr-user.png'
-// import message from './../../assets/img/fi-rr-envelope.png'
-// import home from './../../assets/img/fi-rr-home.png'
-// import subtitles from './../../assets/img/fi-rr-subtitles.png'
+import plusImg from '../../assets/img/Icon_awesome-plus.png'
+import portfelImg from './../../assets/img/fi-rr-user.png'
+import message from './../../assets/img/fi-rr-envelope.png'
+import home from './../../assets/img/fi-rr-home.png'
+import subtitles from './../../assets/img/fi-rr-subtitles.png'
 import { 
     FooterView,
     FooterCreater,
@@ -16,9 +16,10 @@ import {
     StyleSheet,
     Text
 } from 'react-native'
-import { Link } from "react-router-native";
+import { Link, useLocation } from "react-router-native";
 
 const Main = () => {
+    // url = useLocation();
     return (
         <FooterView>
             <FooterCreater>
@@ -26,7 +27,7 @@ const Main = () => {
                     onPress={()=>{console.log("add order")}}
                 >
                     <ImageBackground 
-                        // source={plusImg}
+                        source={plusImg}
                         style={styles.image}
                         resizeMode="center"
                     >
@@ -36,7 +37,7 @@ const Main = () => {
             </FooterCreater>
             <FooterRouter>
                 <Link
-                    to="/"
+                    to={`/`} //${url.pathname}
                     underlayColor="#f0f4f7"
                 >
                     <ImageBackground 
@@ -48,11 +49,11 @@ const Main = () => {
                     </ImageBackground>
                 </Link>
                 <Link
-                    to="/mymaster"
+                    to={`/mymaster`} //${url.pathname}
                     underlayColor="#f0f4f7"
                 >
                     <ImageBackground 
-                        // source={subtitles}
+                        source={subtitles}
                         style={styles.image}
                         resizeMode="contain"
                     >
@@ -61,11 +62,11 @@ const Main = () => {
                 </Link>
                 <FooterCenter></FooterCenter>
                 <Link
-                    to="/message"
+                    to={`/message`} //${url.pathname}
                     underlayColor="#f0f4f7"
                 >
                     <ImageBackground 
-                        // source={message}
+                        source={message}
                         style={styles.image}
                         resizeMode="contain"
                     >
@@ -73,11 +74,11 @@ const Main = () => {
                     </ImageBackground>
                 </Link>
                 <Link
-                    to="/profil"
+                    to={`/profil`} //${url.pathname}
                     underlayColor="#f0f4f7"
                 >
                     <ImageBackground 
-                        // source={portfelImg}
+                        source={portfelImg}
                         style={styles.image}
                         resizeMode="contain"
                     >

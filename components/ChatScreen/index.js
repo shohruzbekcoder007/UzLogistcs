@@ -105,7 +105,9 @@ const ChatScreen = () => {
   }
 
   return (
-    <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
+    <TouchableWithoutFeedback 
+    // onPress={() => Keyboard.dismiss()}
+    >
       <View style={styles.container}>
         <FlatList
           style={{ backgroundColor: '#f2f2ff' }}

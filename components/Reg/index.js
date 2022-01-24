@@ -12,7 +12,7 @@ import {
 import { Icon } from 'react-native-elements';
 import axios from './../../baseUrl'
 
-const Reg = ({userUpdate}) => {
+const Reg = ({setLogin, userUpdate}) => {
 
   let email = ``;
   let password = ``;
@@ -116,6 +116,19 @@ const Reg = ({userUpdate}) => {
                 onChangeText={(text) => {password = text}}
               />
             </View>
+            <TouchableOpacity
+              onPress={() => {
+                setLogin(true)
+                // console.log("salom")
+              }}
+            >
+              <Text 
+                style={styles.registerText}
+                
+              >
+                Login ga qaytish
+              </Text>
+            </TouchableOpacity>
             <Text style={styles.registerText}>
                 Parolingizni esda saqlab qoling!
             </Text>
