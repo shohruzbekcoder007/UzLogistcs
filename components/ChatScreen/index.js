@@ -201,11 +201,12 @@ const styles = StyleSheet.create({
     marginHorizontal: 14,
     backgroundColor: '#fff',
     borderRadius: 4,
+    marginBottom: 15
   },
   messageInput: {
     height: 40,
     flex: 1,
-    paddingHorizontal: 10,
+    paddingHorizontal: 10
   },
   messageSendView: {
     paddingHorizontal: 10,

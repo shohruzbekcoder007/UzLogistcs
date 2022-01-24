@@ -31,7 +31,7 @@ const Main = () => {
 const styles = StyleSheet.create ({
     container:{
         flex: 20,
-        backgroundColor: 'red'
+        backgroundColor: '#e5e5e5'
     },
     item: {
         flexDirection: 'row',
