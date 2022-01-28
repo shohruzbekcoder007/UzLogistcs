@@ -13,14 +13,14 @@ const App = () => {
       setUser(user);
    }
 
-   // if(user._id != 0){
+   if(user._id != 0){
       return <Main/>
-   // } else {
-   //    if(login){
-   //       return <LoginReg setLogin={setLogin} userUpdate={userUpdate}/>
-   //    } else {
-   //       return <Reg setLogin={setLogin} userUpdate={userUpdate}/>
-   //    }
-   // }
+   } else {
+      if(login){
+         return <LoginReg setLogin={setLogin} userUpdate={userUpdate}/>
+      } else {
+         return <Reg setLogin={setLogin} userUpdate={userUpdate}/>
+      }
+   }
 }
 export default App
