@@ -1,6 +1,6 @@
 import React from 'react';
 import { Text, Image, View, StyleSheet, ScrollView } from 'react-native';
-import DatePicker from './../react-native-date-picker'
+import DatePicker from './../MyDatePicker'
 
 const Profil = (props) => {
    return (
